@@ -52,11 +52,11 @@ let num=0;
 
 setInterval(function(){
     num++;
-    if(num>3){
+    if(num>2){
         num=0;
     }
-    $(".article_2_fade_page").fadeOut(500);
-    $(".article_2_fade_page").eq(num).fadeIn(500);
+    $(".article_2_list_item").fadeOut(500);
+    $(".article_2_list_item").eq(num).fadeIn(500);
 
 },3000)
 

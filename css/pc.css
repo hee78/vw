@@ -315,25 +315,14 @@ section{
 /* 아티클 1 */
 .article_2{
   width: 100%;
-  height: 100%;
+  height: 800px;
+  margin-bottom: 70px;
 }
 .article_2 img{
   width: 100%;
   height: 100%;
   object-fit: 100%;
 }
-/* .article_2 .article_title{  
-  position: absolute;
-  top: 150px;
-  left: 50px;
-} */
-/* .article_2 .article_title h3{
-  font-size: 50px;
-}
-.article_2 .article_title p{
-  font-size: 20px;
-  margin-bottom: 30px;
-} */
 .article_2 .article_title a{
   width: 130px;
   height: 50px;
@@ -354,25 +343,22 @@ section{
 }
 .article_2 .article_2_list{
   position: absolute;
-  right: 30px;
-  top: 300px;
-  width: 800px;
-  height: 470px;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
+  right: 60px;
+  top: 200px;
+  width: 400px;
+  height: 700px;
 }
 .article_2_list_item{
-  width: 250px;
-  height: 450px;
+  width: 400px;
+  height: 540px;
   border-radius: 10px;
   background: #fff;
-  overflow: hidden;
   box-shadow: 3px 3px 5px 3px #00000088;
+  position: absolute;
 }
 .article_2_list_item figure{
   width: 100%;
-  height: 180px;
+  height: 270px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -389,64 +375,81 @@ section{
   padding: 10px;
 }
 .article_2_list_item_title h4{
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 .article_2_list_item_title p{
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 .article_2_list_item_title a{
-  font-size: 14px;
+  font-size: 16px;
   color: #ff8800;
 }
 
 /* 아티클3 */
 .article_3{
-    height: 400px;
+  width: 1440px;
+  height: 400px;
 }
 .promotin_ban_wrap{
-    width: 100%;
-    height: 300px;
-    background: sandybrown;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background-image: url(../img/promotion_banner.jpg);
-    background-size: 100% 100%;
+  width: 1440px;
+  height: 400px;
+  background: saddlebrown;
+}
+.promotin_ban_wrap img{
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .promotion_text{
-    width: 100%;
-    height: 120px;
-    text-align: center;
-    position: absolute;
-    top: 60px;
-    left: 0;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000bb;
+  backdrop-filter: blur(2px);
+  color: #fff;
+  padding: 80px;
+  box-sizing: border-box;
 }
 .promotion_text>h4{
-    font-size: 30px;
-    margin-bottom: 5px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ff8800;
 }
 .promotion_text>p{
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 .promotion_but{
-    width: 100px;
-    height: 30px;
-    background: #666;
-    border-radius: 15px;
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-    bottom: 40px;
-    text-align: center;
-    line-height: 30px;
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  bottom: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #333;
+  cursor: pointer;
+}
+.promotion_but:hover{
+background: #002257;
+color: #fff;
 }
 
 /* 아티클 4 */
 .article_4{
     height: 750px;
+    margin-top: 70px;
 }
 .news_wrap{
     width: 1440px;
