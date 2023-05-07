@@ -5,424 +5,438 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VolksWagen</title>
-    <link href="css/commom.css" rel="stylesheet" type="text/css">
-    <link href="css/pc.css" rel="stylesheet" type="text/css">
-    <link href="css/tab.css" rel="stylesheet" type="text/css">
-    <link href="css/mo.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.6.4.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/vw.js"></script>
-</head>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/vw_pc.css" rel="stylesheet" type="text/css">
+    <link href="css/vw_tab.css" rel="stylesheet" type="text/css">
+    <link href="css/vw_mob.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script/jquery-3.6.4.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <script src="script/new_vw.js"></script>
 <body>
-        <header>
-            <div class="top_header_wrap">
-                <nav class="hamburger_menu">
-                    <div class="all_menu">
-                        <div class="all_menu_but"><img src="img/menu-burger.png"></div>
-                        <div class="all_menu_but"><img src="img/cross-small.png"></div>
+    <!-- 헤더영역 -->
+    <header>
+        <div class="top_header_wrap">
+            <nav class="hamburger_menu">
+                <div class="all_menu">
+                    <div class="all_menu_but"><img src="img/menu-burger.png"></div>
+                    <div class="all_menu_but"><img src="img/close.png"></div>
+                </div>
+                <div class="menu_wrap">
+                    <div class="main_menu_wrap">
+                        <div class="main_menu">All Models</div>
+                        <div class="main_menu">Technology</div>
+                        <div class="main_menu">Service</div>
+                        <div class="main_menu">Promotion&News</div>
                     </div>
-                    <div class="menu_wrap">
-                        <div class="main_menu_wrap">
-                            <div class="main_menu">All Models</div>
-                            <div class="main_menu">Technology</div>
-                            <div class="main_menu">Service</div>
-                            <div class="main_menu">Promotion&News</div>
-                        </div>
-                        <div class="sub_menu_wrap">
-                            <ul class="sub_menu_con">
-                                <li class="sub_menu">Touareg</li>
-                                <li class="sub_menu">Golf GTI</li>
-                                <li class="sub_menu">Jetta</li>
-                                <li class="sub_menu">ID.4</li>
-                                <li class="sub_menu">Tiguan Allspace</li>
-                                <li class="sub_menu">Arteon</li>
-                                <li class="sub_menu">Tiguan</li>
-                                <li class="sub_menu">Golf</li>
-                            </ul>
-                            <ul class="sub_menu_con">
-                                <li class="sub_menu">운전자보조시스템</li>
-                                <li class="sub_menu">안전 및 편의사양</li>
-                                <li class="sub_menu">[EV] Technology</li>
-                            </ul>
-                            <ul class="sub_menu_con">
-                                <li class="sub_menu">MY Volkswagen App</li>
-                                <li class="sub_menu">서비스 이용하기</li>
-                                <li class="sub_menu">서비스안내</li>
-                                <li class="sub_menu">폭스바겐 순정 부품</li>
-                                <li class="sub_menu">액세서리</li>
-                                <li class="sub_menu">이전모델</li>
-                                <li class="sub_menu">유용한 정보</li>
-                                <li class="sub_menu">ID 서비스</li>
-                                <li class="sub_menu">폭스바겐 인증 중고차</li>
-                            </ul>
-                            <ul class="sub_menu_con">
-                                <li class="sub_menu">이달의 프로모션</li>
-                                <li class="sub_menu">뉴스</li>
-                                <li class="sub_menu">Instagram</li>
-                                <li class="sub_menu">Facebook</li>
-                                <li class="sub_menu">Youtube</li>
-                                <li class="sub_menu">네이버 포스트</li>
-                                <li class="sub_menu">카카오톡 채널</li>
-                                <li class="sub_menu">FAQ</li>
-                            </ul>
-                        </div>
-                </nav>
-                <ul class="basic_menu_wrap">
-                        <li class="basic_menu basic">
-                            <a href="#">MODEL</a>
-                        </li>
-                        <li class="basic_menu basic">
-                            <a href="#">TECHNOLOGY </a>
-                        </li>
-                        <li class="basic_menu">
-                            <a href="#"><img src="img/h_logo.png"></a>
-                        </li>
-                        <li class="basic_menu basic">
-                            <a href="#">SERVICE</a>
-                        </li>
-                        <li class="basic_menu basic">
-                            <a href="#">PROMOTION</a>
-                        </li>
-                </ul>   
-                <div class="point_menu_wrap">
-                    <div class="point_menu">
-                        <a href="#">시승신청</a>
+                    <div class="sub_menu_wrap">
+                        <ul class="sub_menu_con">
+                            <li class="sub_menu">Touareg</li>
+                            <li class="sub_menu">Golf GTI</li>
+                            <li class="sub_menu">Jetta</li>
+                            <li class="sub_menu">ID.4</li>
+                            <li class="sub_menu">Tiguan Allspace</li>
+                            <li class="sub_menu">Arteon</li>
+                            <li class="sub_menu">Tiguan</li>
+                            <li class="sub_menu">Golf</li>
+                        </ul>
+                        <ul class="sub_menu_con">
+                            <li class="sub_menu">운전자보조시스템</li>
+                            <li class="sub_menu">안전 및 편의사양</li>
+                            <li class="sub_menu">[EV] Technology</li>
+                        </ul>
+                        <ul class="sub_menu_con">
+                            <li class="sub_menu">MY Volkswagen App</li>
+                            <li class="sub_menu">서비스 이용하기</li>
+                            <li class="sub_menu">서비스안내</li>
+                            <li class="sub_menu">폭스바겐 순정 부품</li>
+                            <li class="sub_menu">액세서리</li>
+                            <li class="sub_menu">이전모델</li>
+                            <li class="sub_menu">유용한 정보</li>
+                            <li class="sub_menu">ID 서비스</li>
+                            <li class="sub_menu">폭스바겐 인증 중고차</li>
+                        </ul>
+                        <ul class="sub_menu_con">
+                            <li class="sub_menu">이달의 프로모션</li>
+                            <li class="sub_menu">뉴스</li>
+                            <li class="sub_menu">Instagram</li>
+                            <li class="sub_menu">Facebook</li>
+                            <li class="sub_menu">Youtube</li>
+                            <li class="sub_menu">네이버 포스트</li>
+                            <li class="sub_menu">카카오톡 채널</li>
+                            <li class="sub_menu">FAQ</li>
+                        </ul>
                     </div>
-                    <div class="point_menu">
-                        <a href="#">전시장안내</a>
-                    </div>
+            </nav>
+            <ul class="basic_menu_wrap">
+                    <li class="basic_menu basic">
+                        <a href="#">MODEL</a>
+                    </li>
+                    <li class="basic_menu basic">
+                        <a href="#">TECHNOLOGY </a>
+                    </li>
+                    <li class="basic_menu">
+                        <a href="#"><img src="img/h_logo.png"></a>
+                    </li>
+                    <li class="basic_menu basic">
+                        <a href="#">SERVICE</a>
+                    </li>
+                    <li class="basic_menu basic">
+                        <a href="#">PROMOTION</a>
+                    </li>
+            </ul>   
+            <div class="point_menu_wrap">
+                <div class="point_menu">
+                    <a href="#">시승신청</a>
+                </div>
+                <div class="point_menu">
+                    <a href="#">전시장안내</a>
                 </div>
             </div>
-        </header>
-        <!-- 섹션1영역 -->
-        <section class="section_1">
-            <div class="main_banner">
-                <video autoplay loop muted>
-                    <source src="img/main_banner.mp4">
-                </video>
-            </div>
-            <div class="main_title">
-                <h3>The Tiguan Allspace</h3>
-                <a href="https://tiguanallspace.mnz.co.kr/9393">e-Brochure</a>
-            </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- 섹션2영역 -->
-        <section class="section_2">
-            <div class="article_wrap">
-                <!-- 아티클1, 베스트 모델 -->
-            <article class="article_page article_1">
-                <div class="article_title">
-                    <h3>Best Model</h3>
-                    <p>안전한 성능과 세련된 디자인을 탑재한 폭스바겐의 라인업을 살펴보세요.</p>
+    <!-- 섹션1영역-메인배너 -->
+    <section class="main_banner">
+        <video autoplay loop muted>
+            <source src="img/main_banner.mp4" type="video/mp4">
+                브라우저가 video태그를 지원하지 않습니다.
+        </video>
+        <div class="main_title">
+            <h3>The Tiguan Allspace</h3>
+            <a href="img/The Tiguan Allspace_Price List_230201_web.pdf" pdf="download">e-Brochure</a>
+        </div>
+    </section>
+    <!-- 섹션2영역-아티클 -->
+    <section class="section_2">
+        <!-- 아티클1, 차량 소개 -->
+        <article class="art art_1">
+            <div class="art_title">
+                <h3>Best Model</h3>
+                <p>안전한 성능과 세련된 디자인을 탑재한 폭스바겐의 라인업을 살펴보세요.</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="art_1_left">
+                      <div class="art_1_text">
+                          <h3>EV SUV ID.4</h3>
+                          <p>폭스바겐의 첫 번째 순수 전기</p>
+                          <ul class="car_info">
+                            <li>🔹 판매가 : 54,900,000원~</li>
+                            <li>🔹 배터리 용량 ~80%까지 충전 시간 <br>&nbsp;: 약 36분</li>
+                            <li>🔹 1회충전 주행거리 : 복합 405km</li>
+                            <li>🔹 복합연비 : 4.7km/kWh</li>
+                          </ul>
+                          <div class="art_1_click_but"><span>＞</span>자세히보기</div>
+                      </div>
+                  </div>
+                  <div class="art_1_right">
+                      <img src="img/article_id.png">
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="art_1_left">
+                      <div class="art_1_text">
+                          <h3>The Golf GTI</h3>
+                          <p>Real performance icon</p>
+                          <ul class="car_info">
+                            <li>🔹 판매가 : 45,900,000d원~</li>
+                            <li>🔹 복합연비 : 11.5km/l</li>
+                            <li>🔹 변속기 : 7단 DSG</li>
+                            <li>🔹 배기량 : 1,984cc</li>
+                          </ul>
+                          <div class="art_1_click_but"><span>＞</span>자세히보기</div>
+                      </div>
+                  </div>
+                  <div class="art_1_right">
+                      <img src="img/article_golfgti.png">
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="art_1_left">
+                      <div class="art_1_text">
+                          <h3>The Arteon</h3>
+                          <p>아테온을 더 아름답고 강렬하게</p>
+                          <ul class="car_info">
+                            <li>🔹 판매가 : 58,700,000원~</li>
+                            <li>🔹 복합연비 : 11.5km/l</li>
+                            <li>🔹 변속기 : 7단 DSG</li>
+                            <li>🔹 배기량 : 1,968cc</li>
+                          </ul>
+                          <div class="art_1_click_but"><span>＞</span>자세히보기</div>
+                      </div>
+                  </div>
+                  <div class="art_1_right">
+                      <img src="img/article_arteon.png">
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="art_1_left">
+                      <div class="art_1_text">
+                          <h3>The Tiguan Allspace</h3>
+                          <p>잘 만든 티구안에 공간의 여유를</p>
+                          <ul class="car_info">
+                            <li>🔹 판매가 : 48,900,000원~</li>
+                            <li>🔹 복합연비 : 14.6km/l</li>
+                            <li>🔹 변속기 : 7단 DSG</li>
+                            <li>🔹 배기량 : 1,968cc</li>
+                          </ul>
+                          <div class="art_1_click_but"><span>＞</span>자세히보기</div>
+                      </div>
+                  </div>
+                  <div class="art_1_right">
+                      <img src="img/article_suv.png">
+                  </div>
+                  </div>
                 </div>
-                <div class="art_1_wrap">
-                    <div class="art_1_mask">
-                        <div class="art_1_move">
-                            <div class="art_1_con">
-                                <div class="art_1_left">
-                                    <div class="art_1_text">
-                                        <h3>EV SUV ID.4</h3>
-                                        <p>폭스바겐의 첫 번째 순수 전기</p>
-                                        <h5>배터리 용량 ~80%까지 충전 시간 : 약 36분</h5>
-                                        <h5>1회충전 주행거리 : 복합 405km</h5>
-                                        <div class="art_1_click_but"><span>＞</span>자세히보기</div>
-                                    </div>
-                                </div>
-                                <div class="art_1_right">
-                                    <img src="img/article_id.png">
-                                </div>
-                            </div>
-                            <div class="art_1_con">
-                                <div class="art_1_left">
-                                    <div class="art_1_text">
-                                        <h3>The Golf GTI</h3>
-                                        <p>Real performance icon</p>
-                                        <h5>복합연비 : 11.5km/l</h5>
-                                        <h5>복합 CO₂ 배출량 : 149g/km</h5>
-                                        <div class="art_1_click_but"><span>＞</span>자세히보기</div>
-                                    </div>
-                                </div>
-                                <div class="art_1_right">
-                                    <img src="img/article_golfgti.png">
-                                </div>
-                            </div>
-                            <div class="art_1_con">
-                                <div class="art_1_left">
-                                    <div class="art_1_text">
-                                        <h3>The Arteon</h3>
-                                        <p>아테온을 더 아름답고 강렬하게</p>
-                                        <h5>복합연비 : 15.5km/l</h5>
-                                        <h5>복합 CO₂ 배출량 : 121g/km</h5>
-                                        <div class="art_1_click_but"><span>＞</span>자세히보기</div>
-                                    </div>
-                                </div>
-                                <div class="art_1_right">
-                                    <img src="img/article_arteon.png">
-                                </div>
-                            </div>
-                            <div class="art_1_con">
-                                <div class="art_1_left">
-                                    <div class="art_1_text">
-                                        <h3>The Tiguan Allspace</h3>
-                                        <p>잘 만든 티구안에 공간의 여유를</p>
-                                        <h5>복합연비 : 14.6km/l</h5>
-                                        <h5>복합 CO2 배출량 : 129g/km</h5>
-                                        <div class="art_1_click_but"><span>＞</span>자세히보기</div>
-                                    </div>
-                                </div>
-                                <div class="art_1_right">
-                                    <img src="img/article_suv.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="art_1_but_con">
-                        <div class="art_1_but">
-                            <img src="img/art_1_but_1.png">
-                        </div>
-                        <div class="art_1_but">
-                            <img src="img/art_1_but_2.png">
-                        </div>
-                        <div class="art_1_but">
-                            <img src="img/art_1_but_3.png">
-                        </div>
-                        <div class="art_1_but">
-                            <img src="img/art_1_but_4.png">
-                        </div>
-                    </div>
-                </div>
-            </article>
+                <div class="swiper-pagination"></div>
+              </div>
+        </article>
 
-            <!-- 아티클2, 기능-->
-            <article class="article_page article_2">
+        <!-- 아티클2, 기능 -->
+        <article class="art art_2">
+            <div class="art_title">
+                <h3>Safety·Tech</h3>
+                <p>혁신적인 드라이빙을 가능하게 하는 운전자 보조 시스템을 둘러보세요.</p>
+            </div>
+            <div class="art_2_wrapper">
                 <img src="./img/tech_bg.jpg" alt="테크놀로지 배경 이미지" />
-                <div class="article_title">
-                    <h3>Safety·Tech</h3>
-                    <p>혁신적인 드라이빙을 가능하게 하는 운전자 보조 시스템을 둘러보세요.</p>
-                    <a href="https://www.volkswagen.co.kr/ko/technology.html">view more</a>
-                </div> <!-- .article_title:e -->
                 <ul class="article_2_list">
-                        <li class="article_2_list_item">
-                            <a href="https://www.volkswagen.co.kr/ko/models/id4.html"><figure><img src="img/a3_1_.png" alt="테크놀로지아이템이미지" /></figure></a>
-                            <div class="article_2_list_item_title">
-                                <h4>IQ.DRIVE</h4>
-                                <p>편하고 스마트한 드라이빙 경험을 제공하는 폭스바겐의 첨단 운전자 보조 시스템</p>
-                                <strong>트래블 어시스트</strong>
-                                <p>고속도로와 정비된 국도에서 전방 차량과의 거리를 고려해 속도와 차로 유지 지원</p>
-                                <a href="https://www.volkswagen.co.kr/ko/models/id4.html">view more &gt;</a>
-                            </div> <!-- .article_2_list_item_title:e -->
-                        </li>
-                        <li class="article_2_list_item">
-                            <a href="https://www.volkswagen.co.kr/ko/models/id4.html"><figure><img src="img/a3_2_.png" alt="테크놀로지아이템이미지" /></figure></a>
-                            <div class="article_2_list_item_title">
-                                <h4>IQ.DRIVE</h4>
-                                <p>편하고 스마트한 드라이빙 경험을 제공하는 폭스바겐의 첨단 운전자 보조 시스템</p>
-                                <strong>레인 어시스트</strong>
-                                <p>앞 유리 안쪽에 장착된 카메라 센서 감지를 통해 주행 중 양쪽 차선을 인식 차로 중앙유지 및 차선 이탈 방지</p>
-                                <a href="https://www.volkswagen.co.kr/ko/models/id4.html">view more &gt;</a>
-                            </div> <!-- .article_2_list_item_title:e -->
-                        </li>
-                        <li class="article_2_list_item">
-                            <a href="https://www.volkswagen.co.kr/ko/models/id4.html"><figure><img src="img/a3_3_.png" alt="테크놀로지아이템이미지" /></figure></a>
-                            <div class="article_2_list_item_title">
-                                <h4>IQ.DRIVE</h4>
-                                <p>편하고 스마트한 드라이빙 경험을 제공하는 폭스바겐의 첨단 운전자 보조 시스템</p>
-                                <strong>어댑티브 크루즈 컨트롤(ACC)</strong>
-                                <p>센서 감지를 통해 전방 차량과 차간거리를 유지하며 운전자가 설정한 속도로 주행</p>
-                                <a href="https://www.volkswagen.co.kr/ko/models/id4.html">view more &gt;</a>
-                            </div> <!-- .article_2_list_item_title:e -->
-                        </li>                        
-                </ul> <!-- .article_2_list:e -->
-            </article>
+                    <li class="article_2_list_item">
+                        <a href="https://www.volkswagen.co.kr/ko/models/id4.html"><figure><img src="img/a3_1_.png" alt="테크놀로지아이템이미지" /></figure></a>
+                        <div class="article_2_list_item_title">
+                            <h4>IQ.DRIVE</h4>
+                            <p>편하고 스마트한 드라이빙 경험을 제공하는 폭스바겐의 첨단 운전자 보조 시스템</p>
+                            <h6><mark>트래블 어시스트</mark></h6>
+                            <p>고속도로와 정비된 국도에서 전방 차량과의 거리를 고려해 속도와 차로 유지 지원</p>
+                            <a href="https://www.volkswagen.co.kr/ko/models/id4.html">view more &gt;</a>
+                        </div> <!-- .article_2_list_item_title:e -->
+                    </li>
+                    <li class="article_2_list_item">
+                        <a href="https://www.volkswagen.co.kr/ko/models/id4.html"><figure><img src="img/a3_2_.png" alt="테크놀로지아이템이미지" /></figure></a>
+                        <div class="article_2_list_item_title">
+                            <h4>IQ.DRIVE</h4>
+                            <p>편하고 스마트한 드라이빙 경험을 제공하는 폭스바겐의 첨단 운전자 보조 시스템</p>
+                            <h6><mark>레인 어시스트</mark></h6>
+                            <p>앞 유리 안쪽에 장착된 카메라 센서 감지를 통해 주행 중 양쪽 차선을 인식 차로 중앙유지 및 차선 이탈 방지</p>
+                            <a href="https://www.volkswagen.co.kr/ko/models/id4.html">view more &gt;</a>
+                        </div> <!-- .article_2_list_item_title:e -->
+                    </li>
+                    <li class="article_2_list_item">
+                        <a href="https://www.volkswagen.co.kr/ko/models/id4.html"><figure><img src="img/a3_3_.png" alt="테크놀로지아이템이미지" /></figure></a>
+                        <div class="article_2_list_item_title">
+                            <h4>IQ.DRIVE</h4>
+                            <p>편하고 스마트한 드라이빙 경험을 제공하는 폭스바겐의 첨단 운전자 보조 시스템</p>
+                            <h6><mark>어댑티브 크루즈 컨트롤(ACC)</mark></h6>
+                            <p>센서 감지를 통해 전방 차량과 차간거리를 유지하며 운전자가 설정한 속도로 주행</p>
+                            <a href="https://www.volkswagen.co.kr/ko/models/id4.html">view more &gt;</a>
+                        </div> <!-- .article_2_list_item_title:e -->
+                    </li>                        
+            </ul> <!-- .article_2_list:e -->
 
-            <!-- 아티클3, 프로모션배너 -->
-            <article class="article_page article_3">
-                <div class="promotin_ban_wrap">
-                    <img src="./img/promotion_banner.jpg" alt="프로모션배너" />
-                    <div class="promotion_text">
-                        <h4>5월 프로모션</h4>
-                        <p>월19만 원대로 누리는 티구안 올스페이스
-                            월22만 원대로 부담없이,<br /> 프리미엄 세단 아테온
-                            5년/15만km 보증연장 등</p>
-                        <p>전 차종의 프로모션 혜택을 지금 바로 만나보세요!</p>
-                        <div class="promotion_but">자세히 보기</div>
-                    </div>                    
-                </div> <!-- .promotin_ban_wrap:e -->
-            </article>
-
-            <!-- 아티클4, 뉴스 -->
-            <article class="article_page article_4">
-                <div class="article_title">
-                    <h3>Volkswagen news</h3>
-                    <p>폭스바겐의 최신 뉴스를 가장 먼저 만나보세요.</p>
-                </div>
-                <div class="news_wrap">
-                    <div class="art_4_but_wrap">
-                        <div class="art_4_but art_4_left_but">＜</div>
-                        <div class="art_4_but art_4_right_but">＞</div>
-                    </div>
-                    <div class="article_4_mask">
-                        <div class="article_4_items">
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <img src="img/arti4_1.webp">
-                                </div>
-                                <div class="item_text">
-                                    <p class="date">2023.05.02</p>
-                                    <h5>가정의 달 기념 ‘해피, 힐링, 하트’ 캠페인 실시</h5>
-                                    <p>“행복과 힐링이 가득한 5월의 폭스바겐!”</p>
-                                </div>
-                            </div>
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <img src="img/arti4_2.webp">
-                                </div>
-                                <div class="item_text">
-                                    <p class="date">2023.05.02</p>
-                                    <h5>폭스바겐코리아, ID.4 글로벌 콘텐츠 캠페인</h5>
-                                    <p>캠페인 무비나잇 행사 성료</p>
-                                </div>
-                            </div>
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <img src="img/arti4_3.webp">
-                                </div>
-                                <div class="item_text">
-                                    <p class="date">2023.05.02</p>
-                                    <h5>폭스바겐 대표 순수 전기차를 영화에서 만나다</h5>
-                                    <p><앤트맨과 와스프: 퀀텀매니아>영화 속 폭스바겐!</p>
-                                </div>
-                            </div>
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <img src="img/arti4_4.webp">
-                                </div>
-                                <div class="item_text">
-                                    <p class="date">2023.01.26</p>
-                                    <h5>폭스바겐코리아, 화보 공개</h5>
-                                    <p>‘신형 골프 GTI X 펜싱 선수 김준호’</p>
-                                </div>
-                            </div>
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <img src="img/arti4_5.webp">
-                                </div>
-                                <div class="item_text">
-                                    <p class="date">2023.02.07</p>
-                                    <h5>폭스바겐 공식딜러 유카로오토모빌</h5>
-                                    <p>해운대 전시장 이전 오픈 및 남천 전시장 리뉴얼 오픈</p>
-                                </div>
-                            </div>
-                            <div class="item_box">
-                                <div class="item_img">
-                                    <img src="img/arti4_6.webp">
-                                </div>
-                                <div class="item_text">
-                                    <p class="date">2023.05.02</p>
-                                    <h5>폭스바겐코리아, 봄 맞이 캠페인 진행</h5>
-                                    <p>‘2023 서비스 리프레시 캠페인’</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <!-- 아티클5, 어플 -->
-            <article class="article_page article_5">
-                <div class="app_info_wrap">
-                    <div class="info">
-                        <h4>My vw app<img src="./img/f_app.png" alt="앱로고" /></h4>
-                        <p>내 손 안에 폭스바겐을 만나보세요.</p>
-                        <span>내차 정보를 모아주고<br />내게 맞는 필요한 서비스를 보여주고<br />필요한 혜택을 알려주는 서비스</span>
-                    </div>
-                    <div class="qr">
-                        <a href="#"><img src="./img/f_qr.png" alt="앱큐알" /></a>
-                        <a href="#"><img src="./img/f_qr.png" alt="앱큐알" /></a>
-                    </div>
-                </div> <!-- .app_info_wrap:e -->
-                <div class="app_wrap_mask">
-                    <div class="app_move_box">
-                        <div class="app_img">
-                            <img src="img/a4app_1.png">
-                        </div>
-                        <div class="app_img">
-                            <img src="img/a4app_2.png">
-                        </div>
-                        <div class="app_img">
-                            <img src="img/a4app_4.png">
-                        </div>
-                    </div>
-                </div> <!-- .app_wrap:e -->
-            </article> <!-- .article_page article_4:e -->
-
-            <!-- 아티클6, 시승 -->
-            <article class="article_page article_6"> 
-                <div class="go_drive_text">
-                    <h4>시승/상담 신청</h4>
-                    <p>가족을 전시장에서 폭스바겐의 최신 모델을 경험해보세요.</p>
-                </div> <!-- .go_drive_text:e -->
-                <a href="https://www.volkswagen.co.kr/app/local/testdrive/requestform">바로가기</a>
-            </article> <!-- .go_drive:e -->
             </div>
-        </section>
+        </article>
 
-        <!-- 푸터영역 -->
-        <footer>
-            <div class="in_footer_wrap">
-                <div class="footer_top">
-                    <ul class="footer_menu_con">
-                        <li class="footer_menu">
-                            <a href="https://www.volkswagen.co.kr/app/locals/information/policy/policy.jsp">개인정보처리방침</a>
-                        </li>
-                        <li class="footer_menu">
-                            <a href="https://www.volkswagen.co.kr/app/locals/information/map/servicecenter.jsp">서비스센터 찾기</a>
-                        </li>
-                        <li class="footer_menu">
-                            <a href="https://www.volkswagen.co.kr/app/local/testdrive/requestform">시승상담신청</a>
-                        </li>
-                        <li class="footer_menu">
-                            <a href="https://www.volkswagen.co.kr/ko/faq.html">FAQ</a>
-                        </li>
-                    </ul> <!-- .footer_menu_con:e -->
-                    <ul class="sns_icon_box">
-                        <li class="sns_icon">
-                            <a href="https://www.facebook.com/VWKorea" target="_blank">
-                                <img src="./img/f_img1.png" alt="페이스북아이콘" />
-                            </a>
-                        </li>
-                        <li class="sns_icon">
-                            <a href="https://www.instagram.com/volkswagenkorea/"  target="_blank">
-                                <img src="./img/f_img2.png" alt="인스타그램아이콘" />
-                            </a>
-                        </li>
-                        <li class="sns_icon">
-                            <a href="https://www.youtube.com/user/VolkswagenKorea"  target="_blank">
-                                <img src="./img/f_img3.png" alt="유투브아이콘" />
-                            </a>
-                        </li>
-                    </ul> <!-- .sns_icon_box:e -->
-                </div> <!-- .footer_top:e -->
-                <div class="footer_bottom">
-                    <div class="footer_text_con">
-                        <h6>안내사항 Volkswagen</h6>
-                        <p>＊본 페이지 내 게재 된 이미지는 국내 적용되는 사양과 다를 수 있습니다.<br />
-                        ＊본 페이지 내 게재 된 연비는 표준모드에 의한 연비로서 도로 상태, 운전 방법, 차량 적재, 정비 상태 및 외기 온도 등에 따라 실주행 연비와 차이가 있습니다.<br />
-                       ＊전기차 경우, 외기 온도가 하락하는 동절기 등에는 배터리의 성능 저하로 인해 주행 거리가 감소될 수 있습니다.<br />
-                        ＊차량에 적용된 운전자 보조 시스템은 안전장치가 아닌 운전자를 위한 편의 장치이므로 차량의 통제는 운전자의 판단에 의해 이루어져야 하며 본 시스템에만 의존할 경우 사고가 날 수 있습니다.<br />
-                        ＊고객 커뮤니케이션 센터 : 1577-6905 / 고객지원센터 서비스 및 일반 문의 연락처 : 080-767-0089</p>
+        <!-- 아티클3, 프로모션배너 -->
+        <article class="art art_3">
+            <div class="promotin_ban_wrap">
+                <img src="./img/promotion_banner.jpg" alt="프로모션배너" />
+                <div class="promotion_text">
+                    <h4>5월 프로모션</h4>
+                    <p>월19만 원대로 누리는 티구안 올스페이스
+                        월22만 원대로 부담없이,<br /> 프리미엄 세단 아테온
+                        5년/15만km 보증연장 등</p>
+                    <p>전 차종의 프로모션 혜택을 지금 바로 만나보세요!</p>
+                    <div class="promotion_but">자세히 보기</div>
+                </div>                    
+            </div>
+        </article>
+
+        <!-- 아티클4, 뉴스 -->
+        <article class="art art_4">
+            <div class="art_title">
+                <h3>Volkswagen news</h3>
+                <p>폭스바겐의 최신 뉴스를 가장 먼저 만나보세요.</p>
+            </div>
+            <div class="news_wrap">
+                <div class="art_4_but_wrap">
+                    <div class="art_4_but art_4_left_but">＜</div>
+                    <div class="art_4_but art_4_right_but">＞</div>
+                </div>
+                <div class="article_4_mask">
+                    <div class="article_4_items">
+                        <div class="item_box">
+                            <div class="item_img">
+                                <img src="img/arti4_1.webp">
+                            </div>
+                            <div class="item_text">
+                                <p class="date">2023.05.02</p>
+                                <h5>가정의 달 기념 ‘해피, 힐링, 하트’ 캠페인 실시</h5>
+                                <p>“행복과 힐링이 가득한 5월의 폭스바겐!”</p>
+                            </div>
+                        </div>
+                        <div class="item_box">
+                            <div class="item_img">
+                                <img src="img/arti4_2.webp">
+                            </div>
+                            <div class="item_text">
+                                <p class="date">2023.05.02</p>
+                                <h5>폭스바겐코리아, ID.4 글로벌 콘텐츠 캠페인</h5>
+                                <p>캠페인 무비나잇 행사 성료</p>
+                            </div>
+                        </div>
+                        <div class="item_box">
+                            <div class="item_img">
+                                <img src="img/arti4_3.webp">
+                            </div>
+                            <div class="item_text">
+                                <p class="date">2023.05.02</p>
+                                <h5>폭스바겐 대표 전기차를 영화에서 만나다</h5>
+                                <p><앤트맨과 와스프: 퀀텀매니아>영화 속 폭스바겐!</p>
+                            </div>
+                        </div>
+                        <div class="item_box">
+                            <div class="item_img">
+                                <img src="img/arti4_4.webp">
+                            </div>
+                            <div class="item_text">
+                                <p class="date">2023.01.26</p>
+                                <h5>폭스바겐코리아, 화보 공개</h5>
+                                <p>‘신형 골프 GTI X 펜싱 선수 김준호’</p>
+                            </div>
+                        </div>
+                        <div class="item_box">
+                            <div class="item_img">
+                                <img src="img/arti4_5.webp">
+                            </div>
+                            <div class="item_text">
+                                <p class="date">2023.02.07</p>
+                                <h5>폭스바겐 공식딜러 유카로오토모빌</h5>
+                                <p>해운대 전시장 이전 오픈 및 남천 전시장 리뉴얼 오픈</p>
+                            </div>
+                        </div>
+                        <div class="item_box">
+                            <div class="item_img">
+                                <img src="img/arti4_6.webp">
+                            </div>
+                            <div class="item_text">
+                                <p class="date">2023.05.02</p>
+                                <h5>폭스바겐코리아, 봄 맞이 캠페인 진행</h5>
+                                <p>‘2023 서비스 리프레시 캠페인’</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer_logo_con">
-                        <div class="logo footer_logo">
-                            <a href="https://www.volkswagen.co.kr/ko.html"  target="_blank">
-                                <img src="./img/h_logo.png" alt="유투브아이콘" />
-                            </a>
-                            <p>&copy;Volkswagen 2023</p>
-                        </div>                        
-                    </div> <!-- .footer_logo_con:e -->
-                </div> <!-- .footer_bottom:e -->
-            </div> <!-- .in_footer_wrap:e -->
-        </footer>   
+                </div>
+            </div>
+        </article>
+
+        <!-- 아티클5, 어플 -->
+        <article class="art art_5">
+            <div class="app_info_wrap">
+                <div class="info">
+                    <h4>My vw app</h4>
+                    <img class="art_5_logo" src="./img/f_app.png" alt="앱로고" />
+                    <p>내 손 안에 폭스바겐을 만나보세요.</p>
+                    <span>내차 정보를 모아주고,<br/>내게 맞는 필요한 서비스를 보여주고,<br />필요한 혜택을 알려주는 서비스</span>
+                </div>
+                <div class="qr">
+                    <div class="qr_box">
+                        <p>Android 다운</p>
+                        <div class="qr_img">
+                            <img src="./img/f_qr.png" alt="앱큐알" />
+                        </div>
+                    </div>
+                    <div class="qr_box">
+                        <p>ios 다운</p>
+                        <div class="qr_img">
+                            <img src="./img/f_qr.png" alt="앱큐알" />
+                        </div>
+                    </div>
+                </div>
+                <div class="app_wrap">
+                    <div class="app_img">
+                        <img src="img/a4app_1.png">
+                    </div>
+                    <div class="app_img">
+                        <img src="img/a4app_2.png">
+                    </div>
+                    <div class="app_img">
+                        <img src="img/a4app_4.png">
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+
+        <!-- 아티클6, 시승 -->
+        <article class="art art_6">
+            <div class="go_drive_text">
+                <h4>시승/상담 신청</h4>
+                <p>가족을 전시장에서 폭스바겐의 최신 모델을 경험해보세요.</p>
+            </div>
+            <div class="drive_but">
+                <a href="https://www.volkswagen.co.kr/app/local/testdrive/requestform">바로가기</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- 푸터영역 -->
+    <footer>
+        <div class="in_footer_wrap">
+            <div class="footer_top">
+                <ul class="footer_menu_con">
+                    <li class="footer_menu">
+                        <a href="https://www.volkswagen.co.kr/app/locals/information/policy/policy.jsp">개인정보처리방침</a>
+                    </li>
+                    <li class="footer_menu">
+                        <a href="https://www.volkswagen.co.kr/app/locals/information/map/servicecenter.jsp">서비스센터 찾기</a>
+                    </li>
+                    <li class="footer_menu">
+                        <a href="https://www.volkswagen.co.kr/app/local/testdrive/requestform">시승상담신청</a>
+                    </li>
+                    <li class="footer_menu">
+                        <a href="https://www.volkswagen.co.kr/ko/faq.html">FAQ</a>
+                    </li>
+                </ul> <!-- .footer_menu_con:e -->
+                <ul class="sns_icon_box">
+                    <li class="sns_icon">
+                        <a href="https://www.facebook.com/VWKorea" target="_blank">
+                            <img src="./img/f_img1.png" alt="페이스북아이콘" />
+                        </a>
+                    </li>
+                    <li class="sns_icon">
+                        <a href="https://www.instagram.com/volkswagenkorea/"  target="_blank">
+                            <img src="./img/f_img2.png" alt="인스타그램아이콘" />
+                        </a>
+                    </li>
+                    <li class="sns_icon">
+                        <a href="https://www.youtube.com/user/VolkswagenKorea"  target="_blank">
+                            <img src="./img/f_img3.png" alt="유투브아이콘" />
+                        </a>
+                    </li>
+                </ul> <!-- .sns_icon_box:e -->
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_text_con">
+                    <h6>안내사항 Volkswagen</h6>
+                    <p>＊본 페이지 내 게재 된 이미지는 국내 적용되는 사양과 다를 수 있습니다.<br />
+                    ＊본 페이지 내 게재 된 연비는 표준모드에 의한 연비로서 도로 상태, 운전 방법, 차량 적재, 정비 상태 및 외기 온도 등에 따라 실주행 연비와 차이가 있습니다.<br />
+                    ＊전기차 경우, 외기 온도가 하락하는 동절기 등에는 배터리의 성능 저하로 인해 주행 거리가 감소될 수 있습니다.<br />
+                    ＊차량에 적용된 운전자 보조 시스템은 안전장치가 아닌 운전자를 위한 편의 장치이므로 차량의 통제는 운전자의 판단에 의해 이루어져야 하며 본 시스템에만 의존할 경우 사고가 날 수 있습니다.<br />
+                    ＊고객 커뮤니케이션 센터 : 1577-6905 / 고객지원센터 서비스 및 일반 문의 연락처 : 080-767-0089</p>
+                </div>
+                <div class="footer_logo_con">
+                    <div class="logo footer_logo">
+                        <a href="https://www.volkswagen.co.kr/ko.html"  target="_blank">
+                            <img src="./img/h_logo.png" alt="유투브아이콘" />
+                        </a>
+                        <p>&copy;Volkswagen 2023</p>
+                    </div>                        
+                </div> <!-- .footer_logo_con:e -->
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

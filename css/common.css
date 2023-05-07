@@ -1,0 +1,24 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  ul,li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  html,body {
+      position: relative;
+      background: #002257;
+    }
+
+    .main_menu:hover, .sub_menu:hover{
+      background: white;
+      color: #002257;
+      font-weight: bolder;
+      transition-duration: 0.35s;
+    }
